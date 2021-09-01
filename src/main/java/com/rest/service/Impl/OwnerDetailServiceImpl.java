@@ -19,7 +19,7 @@ public class OwnerDetailServiceImpl implements DogOwnerDetailService{
 
 	@Override
 	public DogOwnerDetails getDogOwner(String name, String regNo) {
-		Optional<DogOwnerDetails> optionalOwner=ownerRepository.findByNameAndRegistrationNo(name, regNo);
+		Optional<DogOwnerDetails> optionalOwner=ownerRepository.findByOwnerNameAndRegistrationId(name, regNo);
 		
 		if(optionalOwner.isPresent()) {
 			return optionalOwner.get();

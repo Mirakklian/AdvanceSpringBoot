@@ -10,6 +10,6 @@ import com.rest.entity.DogOwnerDetails;
 @Repository
 public interface DogOwnerDetailRepository  extends JpaRepository<DogOwnerDetails,Long> {
 	
-	Optional<DogOwnerDetails> findByNameAndRegistrationNo(String name, String regNo);
+	Optional<DogOwnerDetails> findByOwnerNameAndRegistrationId(String name, String regNo);
 
 }

@@ -30,7 +30,7 @@ import lombok.Setter;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-//@EqualsAndHashCode(exclude = "dogDetailList")
+@EqualsAndHashCode(exclude = "dogDetailList")
 @Table(name = "owner_details")
 @EntityListeners(AuditingEntityListener.class)
 public class DogOwnerDetails implements Serializable{/**
@@ -43,11 +43,11 @@ public class DogOwnerDetails implements Serializable{/**
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="registration_no" , nullable= false)
-	private String registrationNo;
+	@Column(name="registration_Id" , nullable= false)
+	private String registrationId;
 	
-	@Column(name="name" , nullable= false)
-	private String name;
+	@Column(name="owner_name" , nullable= false)
+	private String ownerName;
 	
 	@Column(name="address" , nullable= false)
 	private String address;

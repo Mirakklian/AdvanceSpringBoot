@@ -56,7 +56,7 @@ public class DogDetails  {
 	@Column(name = "dog_name")
 	private String dogName;
 
-	@Column(name = "reg_no")
+	@Column(name = "dog_reg_no")
 	private String regNo;
 	
 //	@ManyToOne
